@@ -7,6 +7,7 @@
   "startup": "services",
   "boot": "auto",
   "host_network": true,
+  "image": "rclone/rclone:latest",
   "options": {
     "rclone_config": "/config/rclone/rclone.conf",
     "mount_path": "/mnt/cloud",
