@@ -1,0 +1,16 @@
+{
+  "name": "Rclone Add-on",
+  "version": "1.0.0",
+  "slug": "rclone",
+  "description": "Rclone integration for Home Assistant",
+  "arch": ["amd64", "armv7", "armhf", "aarch64"],
+  "startup": "services",
+  "boot": "auto",
+  "host_network": true,
+  "options": {
+    "rclone_config": "/config/rclone.conf"
+  },
+  "schema": {
+    "rclone_config": "str"
+  }
+}
