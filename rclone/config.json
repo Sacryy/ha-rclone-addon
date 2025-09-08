@@ -1,5 +1,5 @@
 {
-  "name": "Rclone Add-on",
+  "name": "Rclone",
   "version": "1.0.0",
   "slug": "rclone",
   "description": "Rclone integration for Home Assistant",
@@ -8,9 +8,16 @@
   "boot": "auto",
   "host_network": true,
   "options": {
-    "rclone_config": "/config/rclone.conf"
+    "rclone_config": "/config/rclone.conf",
+    "mount_path": "/mnt/cloud",
+    "log_level": "INFO"
   },
   "schema": {
-    "rclone_config": "str"
-  }
+    "rclone_config": "str",
+    "mount_path": "str",
+    "log_level": "str"
+  },
+  "map": [
+    "config:rclone/config"
+  ]
 }
