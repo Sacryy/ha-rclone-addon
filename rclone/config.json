@@ -16,6 +16,5 @@
     "rclone_config": "str",
     "mount_path": "str",
     "log_level": "str"
-  },
-  "map": ["/config/rclone:/config"]
+  }
 }
