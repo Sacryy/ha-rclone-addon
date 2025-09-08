@@ -1,10 +1,10 @@
 name: Rclone GDrive
 version: "0.1"
 slug: rclone_gdrive
-description: Testovací Rclone addon s Rclone připraveným pro HA
-arch: ["arm64"]          # hlavní architektura pro HA
-startup: "before"        # addon se spouští před startem HA
-boot: "auto"             # automatický start při bootu
+description: Testovací Rclone addon
+arch: ["arm64", "amd64"]   # arm64 pro HA, amd64 pro PC test
+startup: "before"
+boot: "auto"
 map:
-config: true           # mapování config souboru z /config/rclone.conf
-image: "ghcr.io/sacryy/rclone_gdrive:latest"  # image z GitHub Container Registry
+  config: true
+image: "rclone_gdrive_local"
