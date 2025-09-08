@@ -8,7 +8,7 @@
   "boot": "auto",
   "host_network": true,
   "options": {
-    "rclone_config": "/config/rclone.conf",
+    "rclone_config": "/config/rclone/rclone.conf",
     "mount_path": "/mnt/cloud",
     "log_level": "INFO"
   },
@@ -17,7 +17,5 @@
     "mount_path": "str",
     "log_level": "str"
   },
-  "map": [
-    "config:rclone/config"
-  ]
+  "map": ["/config/rclone:/config"]
 }
