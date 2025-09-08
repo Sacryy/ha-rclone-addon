@@ -1,0 +1,9 @@
+name: Rclone GDrive
+version: "0.1"
+slug: rclone_gdrive
+description: Testovací Rclone addon
+arch: ["amd64","arm64"]
+startup: "before"
+boot: "auto"
+map:
+  config: true
